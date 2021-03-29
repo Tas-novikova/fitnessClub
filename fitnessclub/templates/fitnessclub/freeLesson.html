@@ -1,0 +1,28 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Записаться на тренировку{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>Записаться на тренировку</h1>
+        <h6>По телефону <strong>+375 29 00-000-00</strong> или оставьте<br> заявку и наш администратор свяжется с Вами.</h6>
+        <p class="note"> <span style="color:red;">* - обязательные поля для заполнения</span></p>
+        <form method="post">
+            {% csrf_token %}
+
+            <span style="color:red;">*</span>{{ form.name }}<br>
+
+            <span style="color:red;">*</span><span style="color:red;">{{ error }}</span>{{ form.phone }}<br>
+            <!--{% if form.errors %}
+                    <div class="alert alert-danger">
+                        {{ form.errors }}
+                    </div>
+            {% endif %}-->
+            <span style="color:red;">*</span>{{ form.days }}<br>
+            {{ form.textMessage }}
+            <br><button class="btn btn-danger active" type="submit">Записаться</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+<div class="forStatistic">
+    <h3>Статистика популярности занятий</h3>
+    <table class="table table-bordered border-warning" style="text-align:center;">
+        <thead>
+            <tr>
+                <th scope="col">Дни</th>
+                <th scope="col">Количество записей</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for el in stat %}
+        <tr> <td>{{el.days_name}}</td><td>{{el.dcount}}</td> </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

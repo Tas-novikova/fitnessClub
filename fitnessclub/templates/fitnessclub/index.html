@@ -1,0 +1,188 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+
+<div class="title">
+    <h2 class="less-h2">Фитнес-клуб <span>FitnessGuide</span></h2><br>
+    <p class="p-25">&nbsp; &nbsp; &nbsp;<span style="border-bottom: 2px dotted gray">Тренируйте тело – наполняйте душу!</span></p>
+</div>
+
+<div class="button_free_lesson">
+    <a href="{% url 'freeLesson' %}" ><button id="buttonFreeLesson" class="btn btn-danger active" type="button" aria-pressed="true" style="border-radius: 2em; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 40%);">Записаться на тренировку</button></a>
+    <a href="{% url 'checkCard' %}" ><button id="buttonCheckCard" class="btn btn-warning active" type="button" aria-pressed="true" style="color: #fff; border-radius: 2em; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 40%);">Проверить абонемент</button></a>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 justify-content-center photosClubs">
+        <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img1.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+        <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img2.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+         <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img3.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+        <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img4.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+        <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img5.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+        <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img6.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+        <div class="d-flex flex-column m-3" style="width: 20%; height: 20%;">
+          <img  src="{% static 'image/gallery/img7.jpg' %}" class="rounded img-fluid card-img-top" alt="clubs photo">
+        </div>
+
+</div>
+
+
+
+
+<!--<div class="card-deck photos_club" >
+    <img  src="{% static 'image/gallery/img1.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img  src="{% static 'image/gallery/img2.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img  src="{% static 'image/gallery/img3.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img  src="{% static 'image/gallery/img4.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img  src="{% static 'image/gallery/img5.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img  src="{% static 'image/gallery/img6.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img  src="{% static 'image/gallery/img7.jpg' %}" class="rounded d-block" alt="clubs photo">
+
+</div>-->
+
+
+<div class="link_full_page">
+    <a href="{% url 'photos' %}" ><button  class="btn-link-page btn active" type="button">Смотреть фото клуба</button></a>
+</div>
+<div class="container">
+    <div class="service-items">
+        <figure class="service-item">
+            <div class="img">
+                <img src="{% static 'image/indexPage/015-gym.png' %}" class="lazyloaded" alt=""/>
+            </div>
+            <figcaption>Площадь зала<br><span>300 м2</span>,<br>потолки 4 м</figcaption>
+        </figure>
+        <figure class=" service-item">
+            <div class="img">
+                <img src="{% static 'image/indexPage/031-running.png' %}" class="lazyloaded" alt=""/>
+            </div>
+            <figcaption>Лучшие<br>тренеры</figcaption>
+        </figure>
+        <figure class="service-item">
+            <div class="img">
+                <img src="{% static 'image/indexPage/049-weightlift-1.png' %}" class="lazyloaded" alt=""/>
+            </div>
+            <figcaption>Тренажеры<br><span>для всех групп</span><br>мышц</figcaption>
+        </figure>
+        <figure class="service-item">
+            <div class="img">
+                <img src="{% static 'image/indexPage/parking-1.png' %}" class="lazyloaded" alt=""/>
+            </div>
+            <figcaption><span>Парковка</span> для<br>машины рядом</figcaption>
+        </figure>
+        <figure class="service-item">
+            <div class="img">
+                <img src="{% static 'image/indexPage/suspension-1.png' %}" class="lazyloaded" alt=""/>
+            </div>
+            <figcaption><span>TABS</span>, пилатес,<br>аэробика,<br>стрейтчинг</figcaption>
+        </figure>
+    </div>
+</div>
+
+<div></div>
+
+<div class="title">
+    <h2 class="less-h2">Популярные абонементы </h2><br>
+</div>
+
+<div class="row abonements">
+    <div class="col info_abonement">
+        <div>
+            <img  src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+            <strong><span>Срок действия: </span> <span>1 месяц / 12 занятий </span></strong>
+        </div>
+        <div>
+            <img src="{% static 'image/diffrent/icons8-calendar.png' %}" alt="">
+            <span>Посещение всех направлений фитнес-клуба в любое время в любой день</span>
+        </div>
+        <div>
+            <img src="{% static 'image/diffrent/icons8-rub.png' %}" alt="">
+            <strong><span>Цена: </span> <span class="price">70 руб </span></strong>
+        </div>
+    </div>
+    <div class="col info_abonement">
+        <div>
+            <img  src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+            <strong><span>Срок действия: </span> <span>1 месяц / безлимит </span></strong>
+        </div>
+        <div>
+            <img src="{% static 'image/diffrent/icons8-calendar.png' %}" alt="">
+            <span>Посещение всех направлений фитнес-клуба в любое время в любой день</span>
+        </div>
+        <div>
+            <img src="{% static 'image/diffrent/icons8-rub.png' %}" alt="">
+            <strong><span>Цена: </span> <span class="price">80 руб </span></strong>
+        </div>
+    </div>
+    <div class="col info_abonement">
+        <div>
+            <img  src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+            <strong><span>Срок действия: </span> <span>3 месяц / бизлемит </span></strong>
+        </div>
+        <div>
+            <img src="{% static 'image/diffrent/icons8-calendar.png' %}" alt="">
+            <span>Посещение всех направлений фитнес-клуба в любое время в любой день</span>
+        </div>
+        <div>
+            <img src="{% static 'image/diffrent/icons8-rub.png' %}" alt="">
+            <strong><span>Цена: </span> <span class="price">210 руб </span></strong>
+        </div>
+    </div>
+</div>
+<div class="link_full_page">
+    <a href="{% url 'price' %}" ><button  class="btn-link-page btn active" type="button">Смотреть все цены</button></a>
+</div>
+
+<div class="title">
+    <h2 class="less-h2">Познакомьтесь с <span>командой тренеров</span></h2><br>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 justify-content-center photosTrainers">
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/ekaterina.jpg' %}" class="rounded img-fluid card-img-top" alt="ekaterina">
+        </div>
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/elizaveta.jpg' %}" class="rounded img-fluid card-img-top" alt="elizaveta">
+        </div>
+         <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/kurashova-tanya.jpg' %}" class="rounded img-fluid card-img-top" alt="kurashova-tanya">
+        </div>
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/pavel.jpg' %}" class="rounded img-fluid card-img-top" alt="pavel">
+        </div>
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/umarova-nastya.jpg' %}" class="rounded img-fluid card-img-top" alt="umarova-nastya">
+        </div>
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/veronika.jpg' %}" class="rounded img-fluid card-img-top" alt="veronika">
+        </div>
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/visockaya.jpg' %}" class="rounded img-fluid card-img-top" alt="visockaya">
+        </div>
+        <div class="d-flex flex-column m-4" style="width: 15%; height: 15%;">
+          <img src="{% static 'image/imgTrainers/yurij.jpg' %}" class="rounded img-fluid card-img-top" alt="yurij">
+        </div>
+
+</div>
+<div class="link_full_page">
+    <a href="{% url 'trainers' %}" ><button  class="btn-link-page btn active" type="button">Смотреть команду</button></a>
+</div>
+
+{% endblock %}
+
+

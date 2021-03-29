@@ -1,0 +1,27 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Галерея{% endblock %}
+
+{% block content %}
+<div class="card-deck" style="justify-content: center;">
+   <!-- <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img1.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img2.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img3.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img4.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img5.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img6.jpg' %}" class="rounded d-block" alt="clubs photo">
+    <img style="max-width: 20%; height: 20%; margin: 1%;" src="{% static 'image/gallery/img7.jpg' %}" class="rounded d-block" alt="clubs photo">-->
+    {% if photos %}
+        {% for el in photos %}
+        <img style="max-width: 20%; height: 20%; margin: 1%;" src="{{ el.photo }}" class="rounded d-block" alt="{{ el.description }}">
+        {% endfor %}
+    {% else %}
+        <p>На данный момет фотографий нет!</p>
+    {% endif %}
+
+</div>
+
+
+{% endblock %}

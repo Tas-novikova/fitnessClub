@@ -1,0 +1,70 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Цены{% endblock %}
+
+{% block content %}
+<div class="allPrice">
+
+    <h3>Месячный абонемент</h3><span class="font-16">(фитнес зал, тренажерный зал)</span>
+
+    <div class="priceAb row">
+        <div class="price-form">
+            <span class="price-form-h5"><h5>1 занятиe</h5></span>
+            <span class="price-form-h4"><h4>10 руб</h4></span>
+        </div>
+        <div class="price-form">
+            <span class="price-form-h5"><h5>4 занятия</h5></span>
+            <span class="price-form-h4"><h4>35 руб</h4></span>
+        </div>
+        <div class="price-form">
+            <span class="price-form-h5"><h5>6 занятий</h5></span>
+            <span class="price-form-h4"><h4>45 руб</h4></span>
+        </div>
+        <div class="price-form">
+            <span class="price-form-h5"><h5>8 занятий</h5></span>
+            <span class="price-form-h4"><h4>60 руб</h4></span>
+        </div>
+        <div class="price-form">
+            <span class="price-form-h5"><h5>12 занятий</h5></span>
+            <span class="price-form-h4"><h4>70 руб</h4></span>
+        </div>
+        <div class="price-form ">
+            <span class="price-form-h5"><h5>не ограничено</h5></span>
+            <span class="price-form-h4"><h4>80 руб</h4></span>
+        </div>
+    </div>
+    <h3>Квартальный абонемент (3 месяца)</h3><span class="font-16">(фитнес зал, тренажерный зал)</span>
+    <div class="priceAb">
+        <div class="price-form">
+            <span class="price-form-h5"><h5>26 занятий (2 раза в неделю)</h5></span>
+            <span class="price-form-h4"><h4>165 руб</h4></span>
+        </div>
+        <div class="price-form">
+            <span class="price-form-h5"><h5>не ограничено</h5></span>
+            <span class="price-form-h4"><h4>210 руб</h4></span>
+        </div>
+    </div>
+    <h3>Полугодовой абонемент (6 месяцев)</h3><span class="font-16">(фитнес зал, тренажерный зал)</span>
+    <div class="priceAb">
+        <div class="price-form">
+            <span class="price-form-h5"><h5>52 занятий (2 раза в неделю)</h5></span>
+            <span class="price-form-h4"><h4>300 руб</h4></span>
+        </div>
+        <div class="price-form">
+            <span class=" price-form-h5 "><h5>не ограничено</h5></span>
+            <span class="price-form-h4"><h4>400 руб</h4></span>
+        </div>
+    </div>
+    <h3>Годовой абонемент</h3><span class="font-16">(фитнес зал, тренажерный зал)</span>
+    <div class="priceAb">
+        <div class="price-form">
+            <span class="price-form-h5 "><h5>не ограничено</h5></span>
+            <span class="price-form-h4"><h4>750 руб</h4></span>
+        </div>
+    </div>
+    <p>* <em>продолжительность занятия</em>: в фитнес зале – 55 минут, в тренажерном зале – 90 минут</p>
+</div>
+
+{% endblock %}

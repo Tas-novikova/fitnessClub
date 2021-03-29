@@ -1,0 +1,103 @@
+@media screen and (min-width: 821px){
+.timetable.small {
+    display: none;}
+}
+@media screen and (max-width: 820px){
+.timetable.small {
+    display: block;}
+.timetable {
+    display: none;}
+.timetable.small {
+    font-size: 13px;}
+.box_header{
+    float: left;
+    padding-top: 10px;}
+h3{
+    color: #1a1a1a;}
+ul{
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5em;}
+li{
+    list-style-type: none;}
+.timetable.small .items_list li{
+    width: 100%;}
+.items_list li{
+    padding: 10px 0 10px 25px;}
+.items_list li{
+    float: left;
+    border-bottom: 1px solid #eee;}
+.items_list.dark li{
+    border-color:#353535;}
+.items_list span{
+    float: none;}
+.items_list.dark .value{
+    color: #333;}
+.items_list .value{
+    float: right;}
+}
+
+
+.for_timetable{
+    display: block;
+}
+table{
+    border-collapse: separate;
+}
+.timetable{
+    width: 100%;
+    font-size: 12px;
+    color: #404040;
+}
+.timetable th{
+    font-size: 1.1em;
+}
+.timetable th, .timetable td{
+    width: 12%;
+    text-align: center;
+    padding: 15px;
+}
+.timetable td.event{
+    border-radius: 10%;
+    line-height: 150%;
+    font-size: 1.1em;
+    border: 2px solid #eee;
+    box-shadow: 0 5px 7px #ffc1073d, 0 5px 5px #00000038;
+    line-height: 2em;
+}
+.upbody{
+    background-color: #CECEF6;
+}
+.strech{
+    background-color: #F6CEF5;
+}
+.pilates{
+    background-color: #F5F6CE;
+}
+.step{
+    background-color: #E3CEF6;
+}
+.tabs{
+    background-color: #E0F8EC;
+}
+.lower{
+    background-color: #CEF6F5;
+}
+.training{
+    background-color: #F6D8CE;
+}
+.sculpt{
+    background-color: #CEF6CE;
+}
+.timetable td.td_time{
+    font-size: 1.1em;
+}
+.mes_after_table{
+    font-size: 1em;
+    text-align: center;
+    padding-top: 10px;
+}
+.star_after_table{
+    font-size: 1.1em;
+    color: #B40404;
+}

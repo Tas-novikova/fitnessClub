@@ -1,0 +1,23 @@
+{% extends 'fitnessclub/servicesBase.html' %}
+
+{% block contentServices %}
+<div><h1>Стретчинг</h1>
+</div>
+<br />
+<div class="content-types" style="font-size: 1.25em"><strong>Стретчинг</strong> (от англ. stretching) — занятие, направленное на растягивание мышц соединительнотканных образований.
+    Основными целями стретчинга являются: развитие и поддержание гибкости,
+    улучшение подвижности всех суставов, снятие мышечного напряжения, расслабление.<br /><br />
+
+    <strong>Эффекты: </strong><br />
+    <ul style="font-size: 1em">
+        <li> активизируются метаболические (обменные) процессы;</li>
+        <li> расслабление, снятие напряжения; </li>
+        <li> уменьшение некоторых видов боли (крепатуры, боли при менструации и др.); </li>
+        <li> психологический эффект: улучшение настроения, ощущение спокойствия и комфорта. </li>
+    </ul><br />
+    <span style="font-size: 1.3em; font-weight: bold;">Пробная тренировка - БЕСПЛАТНО.</span><br /><br />
+</div>
+<div class="button_free_lesson">
+    <a href="{% url 'freeLesson' %}" ><button id="buttonFreeLesson" class="btn btn-danger active" type="button" aria-pressed="true" style="border-radius: 2em; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 40%);">Записаться на тренировку</button></a>
+</div>
+{% endblock %}

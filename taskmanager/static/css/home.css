@@ -1,0 +1,199 @@
+@media screen and (max-width: 992px){
+.container {
+    max-width: 960px;}
+}
+@media screen and (max-width: 768px){
+.container {
+    max-width: 720px;}
+
+.service-items .service-item {
+    width: 20%;
+    font-size: 1em;}
+}
+@media screen and (max-width: 768px){
+.abonements .info_abonement{
+    font-size:1em;
+    line-height: 1.7em;}
+}
+@media screen and (max-width: 576px){
+.container {
+    max-width: 540px;}
+.service-items{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;}
+.photos_club{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+.photos_club img{
+    width: 40%;}
+}
+@media screen and (max-width: 1200px){
+.service-items {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;}
+}
+@media screen and (max-width: 1200px){
+.service-items .service-item {
+    width: 17%;
+    margin-bottom: 10px;}
+}
+@media screen and (max-width: 768px){
+h2.less-h2 {
+    font-size: 2em;}
+}
+@media screen and (max-width: 992px){
+h2.less-h2 {
+    font-size: 36px;}
+}
+@media screen and (max-width: 768px){
+.title h2:after {
+    height: 30px;
+    top: 8px;}
+}
+@media screen and (max-width: 768px){
+p.p-25 {
+    font-size: 16px;}
+}
+.photos_club{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.photos_club img{
+    max-width: 20%;
+    height: 20%;
+    margin: 1%;}
+
+.container {
+    width: 100%;
+    padding: 20px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+figure {
+    margin: 0 0 1rem;
+}
+.service-items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*.service-items .service-item {
+    width: 17%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+  }*/
+.service-item{
+    width: 17%;
+    text-align: center;
+    margin-right: 10px;
+}
+.service-items .service-item .img {
+    height: 50px;
+    margin-bottom: 22px;
+}
+.service-items .service-item img {
+    width: 50px;
+}
+.service-items .service-item span {
+    font-weight: 500;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 3em;
+}
+.title h2 {
+    display: inline-block;
+    position: relative;
+    padding-left: 0;
+}
+
+h2.less-h2 {
+    font-size: 3em;
+}
+.title h2::after {
+    content: '';
+    background: #EEEEEE;
+    height: 48px;
+    width: 102%;
+    position: absolute;
+    top: 15px;
+    left: -13px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+    z-index: -1;
+}
+p.p-25 {
+    font-size: 2.1em;
+    font-width: bold;
+    font-style: italic;
+    color:#ff9900;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.abonements{
+    margin: 3em 0 1.5em 0;
+}
+.abonements .info_abonement{
+    font-size:1.3em;
+    margin: 1em;
+    background-color: #00000013;
+    border: 2px solid #eee;
+    border-radius: 1em;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.25), 0 3px 3px rgba(0,0,0,0.22);
+    line-height: 2em;
+}
+.info_abonement .price{
+    margin-left:1em;
+    border-radius: 5px;
+    border-bottom:2px solid orange;
+    border-right:2px solid orange;
+}
+div .button_free_lesson {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+a #buttonFreeLesson, a #buttonCheckCard{
+    margin-bottom: 0.5em;
+}
+
+div .link_full_page {
+    text-align: center;
+    margin-bottom: 4em;
+}
+.btn-link-page{
+    background-color: #fff;
+    border: 2px solid #fcc82f;
+    font-size:1.3em;
+    font-width: bold;
+    padding: 10px;
+    border-radius: 0.5em;
+}
+.btn-link-page:hover{
+    border: 2px solid #fc7b2f;
+}

@@ -1,0 +1,81 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+{% block content %}
+
+
+<div class="for-services">
+    <nav class="nav navbar-light navbar-expand-md flex-column servicesMenu" >
+        <ul class="nav flex-column">
+          <li class="nav-item {% if request.resolver_match.url_name == 'gym' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'gym' %}">Тренажерный зал</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'functionalTraining' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'functionalTraining' %}">Функциональный тенинг</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'pilates' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'pilates' %}">Пилатес</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'bodySculpt' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'bodySculpt' %}">Скульптура тела</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'lowerBody' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'lowerBody' %}">Lower-body</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'upperBody' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'upperBody' %}">Upper-body</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'stepAerobics' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'stepAerobics' %}">Степ-аэробика</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'stretching' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'stretching' %}">Стретчинг</a>
+          </li>
+          <li class="nav-item {% if request.resolver_match.url_name == 'tabsStretching' %}active{% endif %}">
+            <a class="nav-link" href="{% url 'tabsStretching' %}">TABS-Stretching</a>
+          </li>
+        </ul>
+        <!--<a class="nav-link active" href="{% url 'gym' %}">Тренажерный зал</a>
+        <a class="nav-link" href="{% url 'functionalTraining' %}">Функциональный тенинг</a>
+        <a class="nav-link" href="{% url 'pilates' %}">Пилатес</a>
+        <a class="nav-link" href="{% url 'bodySculpt' %}">Скульптура тела</a>
+        <a class="nav-link" href="{% url 'lowerBody' %}">Lower-body</a>
+        <a class="nav-link" href="{% url 'upperBody' %}">Upper-body</a>
+        <a class="nav-link" href="{% url 'stepAerobics' %}">Степ-аэробика</a>
+        <a class="nav-link" href="{% url 'stretching' %}">Стретчинг</a>
+        <a class="nav-link" href="{% url 'tabsStretching' %}">TABS-Stretching</a>-->
+    </nav>
+   <!-- <div class="servicesMenu">
+        <div class="typeMenu">
+            </a><h5><a href="{% url 'gym' %}">Тренажерный зал</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'functionalTraining' %}">Функциональный тенинг</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'pilates' %}">Пилатес</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'bodySculpt' %}">Скульптура тела</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'lowerBody' %}">Lower-body</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'upperBody' %}">Upper-body</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'stepAerobics' %}">Степ-аэробика</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'stretching' %}">Стретчинг</a></h5>
+        </div>
+        <div class="typeMenu">
+            <h5><a href="{% url 'tabsStretching' %}">TABS-Stretching</a></h5>
+        </div>
+    </div>-->
+    <div class="for-types">
+        {% block contentServices %}{% endblock %}
+    </div>
+</div>
+{% endblock %}

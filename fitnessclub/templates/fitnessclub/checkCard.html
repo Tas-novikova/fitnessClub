@@ -1,0 +1,36 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Проверить абонемент{% endblock %}
+
+{% block content %}
+<div class="form-checkCard">
+        <h1>Проверить абонемент</h1>
+ <form method="post" action="" name="forCheckCard" class="form-row ">
+   {% csrf_token %}
+     <input type="text" name="checkCard" placeholder="Введите номер карты" />
+
+     <button class="btn btn-success btn-sm active" type="submit">Проверить</button>
+  </form>
+
+
+
+    {% if status == 1 %}
+    <span>Не существует</span>
+    {% endif %}
+{% if carddata %}
+    {% if status == 2 %}
+        <span>Закончился</span>
+    {% endif %}
+    {% if status == 3 %}
+            <span>Абонемент №{{ carddata.number_card }} <br> действует до {{ carddata.date_finish}} </span>
+        <!--{% if el.date_finish   %}
+            <p>{{ el.number_card }} - действующий до  {{ el.date_finish }}</p>
+        {% else %}
+        <p>{{ el.number_card }} - недействующий</p>
+        {% endif %}-->
+    {% endif %}
+{% endif %}
+</div>
+{% endblock %}

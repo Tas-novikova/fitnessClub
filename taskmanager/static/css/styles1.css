@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, Montserrat, Roboto, Arial, sans-serif;
+}
+body {
+    background-image: url("image/diffrent/bg.jpg")
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: repeat;
+    color: #252525;
+    font-family: 'Futura PT';
+    font-size: 16px;
+    font-weight: 400;
+}
+header.scroll {
+    background: #252525e3;
+    padding: 10px 0;
+}
+header {
+    color: #FAFAFA;
+    padding: 54px 0 0;
+    position: fixed;
+    width: 100%;
+    margin-bottom: -88px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    z-index: 100;
+}
+.logo{
+    color: #939597;
+}

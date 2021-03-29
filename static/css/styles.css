@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Open Sans, Montserrat, Roboto, Arial, sans-serif;
+}
+body{
+    background-color: #fff;
+    height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.contentAll {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+    text-align: center;
+    max-height: 60px;
+	background-color: #939597;
+	color: #fff;
+}
+.hmain {
+    max-height: 100px;
+    background-color: #939597;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 5%;
+}
+.hftext{
+    font-size: 30px;
+}
+.htext {
+	/* position: absolute; */
+	/* top: -150px; */
+	font-size: 40px;
+	font-weight: bold;
+	font-style: italic;
+	color: #ff9900;
+	/* margin-left: 35%; */
+	text-align: center;
+	line-height: 35px;
+}
+.htext a {
+	text-decoration: none;
+	color: #ff9900;
+}
+.vkLink, .facebookLink, .instaLink{
+    height: 25px;
+    weight: 25px
+}
+.hcontacts{
+	/* position: absolute; */
+	/* top: -150px; */
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+    color: #15a527;
+}
+.htel {
+    color: #fff;
+    font-size: 0.75em;
+}
+.hcontacts .tel,
+.hcontacts .mail
+{
+	font-size: 18px;
+	color: #ff9900;
+	margin-top: 5px;
+}
+.Box-for-menu {
+	max-height: 50px;
+    background: #939597;
+    border-top: 2px solid #ff9900;
+}
+.mainMenu {
+	display: flex;
+	justify-content: space-around;
+}
+.listMenu {
+	font-size: 1.45em;
+	align-items: center;
+	margin: 5px 5px;
+}
+
+.listMenu a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.listMenu
+:hover {
+	color:  #ff9900;
+}
+.choiceList{
+	border: 2px solid #ffbb00;
+	border-radius: 10px 0;
+	background: #ffbb00;
+}
+.content {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 160px 100px 40px 100px;
+}
+.mainText {
+	font-size: 16px;
+	min-width: 200px;
+	max-width: 95%;
+	padding: 10px;
+	margin: 10px 30px;
+	line-height: 1.5;
+}
+.mainMenu .listMenu.active{
+	border: 1px solid #ff9900;
+	border-radius: 0.2em;
+	background: #ff99008c;
+}
+.contacts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: space-around;
+}
+.contacts-text{
+    width: 45%;
+}
+.contacts-map{
+    width: 45%;
+}
+
+
+.types-fitness{
+    display:flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+.type-fit{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e9ecef;
+    margin: 15px;
+}
+.type-fit-img{
+    vertical-align: middle;
+}
+.type-fit-img img{
+    width: 100%;
+    height: 165px;
+}
+.type-fit-name{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #e9ecef;
+}
+.for-services {
+    display: flex;
+}
+.servicesMenu {
+    display: flex;
+    flex-direction:column;
+    justify-content: left;
+    margin-right: 5%;
+}
+.typeMenu {
+    margin-bottom: 0.8em;
+}
+.for-types {
+    width:70%;
+    display: flex;
+    flex-direction:column;
+}
+
+
+.allPrice{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.priceAb{
+    padding-bottom: 20px;
+}
+.priceAb{
+    display: flex;
+}
+.price-form{
+    display: flex;
+    flex-direction:column;
+    background-color: #fff;
+    margin: 2% 0 2% 20px;
+    text-align: center;
+}
+.price-form-h5 {
+    font: normal 18px/18px Open Sans;
+    font-width: bold;
+    padding: 15px 10px;
+    background-color: #e1e4e5;
+    color: #32393d;
+    border-bottom: 1px solid #fff;
+}
+.price-form-h4{
+    font: normal 18px/18px Open Sans;
+    font-width: bold;
+    padding: 10px;
+    background-color: #486581;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.font-16 {
+    font: 16px;
+}
+.font-20 {
+    font: 20px;
+}
+.price-form-h5-neog{
+    font: normal 18px/18px Open Sans;
+    font-width: bold;
+    padding: 27px 10px;
+    background-color: #e1e4e5;
+    color: #32393d;
+    border-bottom: 1px solid #fff;
+}
+.haccount{
+    display: flex;
+    flex-direction:column;
+}
+

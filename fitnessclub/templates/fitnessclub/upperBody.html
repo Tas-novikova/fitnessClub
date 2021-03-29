@@ -1,0 +1,31 @@
+{% extends 'fitnessclub/servicesBase.html' %}
+
+{% block contentServices %}
+<div><h1>Upper-body</h1>
+</div>
+<br />
+<div class="content-types" style="font-size: 1.2em"><strong>Занятие направленно на развитие мышц верхней части тела: </strong><br />
+    <ul style="font-size: 1em">
+        <li> рук; </li>
+        <li> плечевого пояса; </li>
+        <li> груди; </li>
+        <li> спиныа; </li>
+        <li> пресса. </li>
+    </ul>
+    Тренировка включает различные упражнения от самых простых до очень сложных, с собственным весом и с использованием оборудования:<br />
+    <ul style="font-size: 1em">
+        <li> медицинских мячи; </li>
+        <li> утяжеленные гимнастические палки (бодибары); </li>
+        <li> гантели. </li>
+    </ul>
+    Мышцы спины и пресса поддерживают тело в вертикальном положении, благодаря им мы свободно двигаем руками.
+    Плечевой сустав самый подвижный и самый уязвимый, поэтому работа, направленная на укрепление окружающих его мышц, позволит избежать травмирования.&nbsp;<br /><br />
+
+    Тренировки обеспечат силу мышц, их подтянутость и рельеф, позволят улучшить здоровье и степень владения собственным телом <br /><br />
+
+    <span style="font-size: 1.3em; font-weight: bold;">Пробная тренировка - БЕСПЛАТНО.</span><br /><br />
+</div>
+<div class="button_free_lesson">
+    <a href="{% url 'freeLesson' %}" ><button id="buttonFreeLesson" class="btn btn-danger active" type="button" aria-pressed="true" style="border-radius: 2em; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 40%);">Записаться на тренировку</button></a>
+</div>
+{% endblock %}

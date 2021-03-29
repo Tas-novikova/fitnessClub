@@ -1,0 +1,28 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Таблица с данными{% endblock %}
+
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{form.as_table}}
+    <button type="submit">Обработать</button>
+</form>
+<hr>
+<table>
+    <tr><td>Имя</td><td>Телефон</td><td>Дни</td><td>Сообщение</td><td>Дата</td><td>Примечание</td></tr>
+    {% for el in Lessons %}
+
+    <tr><td>{{ el.name}}</td><td>{{ el.phone}}</td><td>{{ el.days}}</td><td>{{ el.textMessage}}</td>
+        <td>{{ el.date_in}}{{ el.time_in}}</td>
+        <td>{% if el.note==True %}
+            обработано
+            {% endif %}
+        </td></tr>
+    {% endfor %}
+
+</table>
+
+{% endblock %}

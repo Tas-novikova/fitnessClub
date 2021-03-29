@@ -1,0 +1,22 @@
+.carousel {
+  left: 12.5%;
+  height: 300px !important;
+  overflow: hidden;
+  width: 75%;
+}
+.carousel-inner {
+  overflow: visible;
+}
+.carousel-inner img {
+  left: 50%;
+  max-width: none !important;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  transform: translate(-50%,-50%);
+}
+/*.w-100 {
+  width: 100% !important;
+}*/
+
+

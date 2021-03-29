@@ -1,0 +1,446 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+% load bootstrap4 %}
+
+{% block title %}Расписание{% endblock %}
+
+{% block content %}
+<div class="for_timetable">
+    <table class="timetable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+                <th>Суббота</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="td_time">9:00 - 10:00</td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="row_gray">
+                <td class="td_time">10:00 - 11:00</td>
+                <td class="event upbody">
+                    Upper-body
+                    <div class="after_type"></div>
+                </td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td class="event upbody">
+                    Upper-body
+                    <div class="after_type"></div>
+                </td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td class="event upbody">
+                    Upper-body
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="td_time">11:00 - 12:00</td>
+                <td class="event strech">
+                    Стретчинг
+                    <div class="after_type"></div>
+                </td>
+                <td class="event lower">
+                    Lower-body
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+                <td class="event strech">
+                    Стретчинг
+                    <div class="after_type"></div>
+                </td>
+                <td class="event lower">
+                    Lower-body
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="row_gray">
+                <td class="td_time">12:00 - 13:00</td>
+                <td class="event sculpt">
+                    Скульптура тела
+                    <div class="after_type"></div>
+                </td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td class="event sculpt">
+                    Скульптура тела
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td class="event strech">
+                    Стретчинг
+                    <div class="after_type"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_time">13:00 - 14:00</td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td class="event training">
+                    Функциональный тренинг
+                    <div class="after_type"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_time">14:00 - 15:00</td>
+                <td></td>
+                <td></td>
+                <td>Перерыв</td>
+                <td></td>
+                <td></td>
+                <td class="event tabs">
+                    TABS-Stretch
+                    <div class="after_type"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_time">15:00 - 16:00</td>
+                <td></td>
+                <td></td>
+                <td>Перерыв</td>
+                <td></td>
+                <td></td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="td_time">16:00 - 18:00</td>
+                <td></td>
+                <td></td>
+                <td >Перерыв</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="td_time">18:00 - 19:00</td>
+                <td class="event lower">
+                    Lower-body
+                    <div class="after_type"></div>
+                </td>
+                <td class="event training">
+                    Функциональный тренинг
+                    <div class="after_type"></div>
+                </td>
+                <td class="event upbody">
+                    Upper-body
+                    <div class="after_type"></div>
+                </td>
+                <td class="event lower">
+                    Lower-body
+                    <div class="after_type"></div>
+                </td>
+                <td class="event training">
+                    Функциональный тренинг
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="row_gray">
+                <td class="td_time">19:00 - 20:00</td>
+                <td class="event tabs">
+                    TABS-Stretch
+                    <div class="after_type"></div>
+                </td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td class="event tabs">
+                    TABS-Stretch
+                    <div class="after_type"></div>
+                </td>
+                <td class="event step">
+                    Степ-аэробика
+                    <div class="after_type"></div>
+                </td>
+                <td class="event tabs">
+                    TABS-Stretch
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="td_time">20:00 - 21:00</td>
+                <td class="event strech">
+                    Стретчинг
+                    <div class="after_type"></div>
+                </td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td class="event strech">
+                    Стретчинг
+                    <div class="after_type"></div>
+                </td>
+                <td class="event pilates">
+                    Пилатес
+                    <div class="after_type"></div>
+                </td>
+                <td class="event strech">
+                    Стретчинг
+                    <div class="after_type"></div>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="timetable small d-lg-none">
+        <h3 class="box_header">Понедельник</h3>
+        <ul class="items_list dark opening_hours">
+            <li class="icon_clock">
+                <img  src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">9:00-10:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Upper-body</span>
+                <div class="value">10:00-11:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Стретчинг</span>
+                <div class="value">11:00-12:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Скульптура тела</span>
+                <div class="value">12:00-13:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">13:00-14:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Lower-body</span>
+                <div class="value">18:00-19:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>TABS-Stretch</span>
+                <div class="value">19:00-20:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Стретчинг</span>
+                <div class="value">20:00-21:00</div>
+            </li>
+        </ul>
+        <h3 class="box_header page_margin_top">Вторник</h3>
+        <ul class="items_list dark opening_hours">
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">10:00-11:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Lower-body</span>
+                <div class="value">11:00-12:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">12:00-13:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Функциональный тренинг</span>
+                <div class="value">18:00-19:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">19:00-20:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">20:00-21:00</div>
+            </li>
+        </ul>
+        <h3 class="box_header page_margin_top">Среда</h3>
+        <ul class="items_list dark opening_hours">
+            <li class="icon_clock">
+                <img  src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">9:00-10:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Upper-body</span>
+                <div class="value">10:00-11:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Скульптура тела</span>
+                <div class="value">12:00-13:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">13:00-14:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Upper-body</span>
+                <div class="value">18:00-19:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>TABS-Stretch</span>
+                <div class="value">19:00-20:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Стретчинг</span>
+                <div class="value">20:00-21:00</div>
+            </li>
+        </ul>
+        <h3 class="box_header page_margin_top">Четверг</h3>
+        <ul class="items_list dark opening_hours">
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">10:00-11:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>lower-body</span>
+                <div class="value">18:00-19:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">19:00-20:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">20:00-21:00</div>
+            </li>
+        </ul>
+        <h3 class="box_header page_margin_top">Пятница</h3>
+        <ul class="items_list dark opening_hours">
+            <li class="icon_clock">
+                <img  src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">9:00-10:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Upper-body</span>
+                <div class="value">10:00-11:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Lower-body</span>
+                <div class="value">11:00-12:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Степ-аэробика</span>
+                <div class="value">12:00-13:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">13:00-14:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Функциональный тренинг</span>
+                <div class="value">18:00-19:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>TABS-Stretch</span>
+                <div class="value">19:00-20:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Стретчинг</span>
+                <div class="value">20:00-21:00</div>
+            </li>
+        </ul>
+        <h3 class="box_header page_margin_top">Суббота</h3>
+        <ul class="items_list dark opening_hours">
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Стретчинг</span>
+                <div class="value">12:00-13:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Функциональный тренинг</span>
+                <div class="value">13:00-14:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>TABS-Stretch</span>
+                <div class="value">14:00-15:00</div>
+            </li>
+            <li class="icon_clock">
+                <img src="{% static 'image/diffrent/icon_clock_orange.png' %}" alt="">
+                <span>Пилатес</span>
+                <div class="value">15:00-16:00</div>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="mes_after_table"><span class="star_after_table">*</span> Посещение классов возможно только по предварительной записи за 8 часов. Занятие проводится с группой от 3х до 12ти человек.</div>
+
+{% endblock %}

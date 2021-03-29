@@ -1,0 +1,96 @@
+{% extends 'fitnessclub/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+{% block title %}Услуги{% endblock %}
+
+{% block content %}
+<div class="types-fitness">
+   <!--{% if services %}
+        {% for el in services %}
+        <div class="type-fit">
+            <div class="type-fit-img">
+                <img src="{{ el.photo }}" alt="{{ el.title }}">
+            </div>
+            <div class="type-fit-name">
+                <h5><a href="{% url 'services-detail' el.id %}">{{ el.title }}</a></h5>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+        <p>На данный момет услуги отсуствуют!</p>
+    {% endif %}-->
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/gym.jpg' %}" alt="Тренажерный зал">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'gym' %}">Тренажерный зал</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/functional-training.png' %}" alt="Функциональный тренинг">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'functionalTraining' %}">Функциональный тренинг</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/pilates.jpg' %}" alt="Пилатес">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'pilates' %}">Пилатес</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/body-sculpt.png' %}" alt="Скульптура тела">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'bodySculpt' %}">Скульптура тела</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/lower-body.png' %}" alt="Lower-body">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'lowerBody' %}">Lower-body</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/upper-body.png' %}" alt="Upper-body">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'upperBody' %}">Upper-body</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/step-aerobics.png' %}" alt="Степ-аэробика">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'stepAerobics' %}">Степ-аэробика</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/stretching.jpg' %}" alt="Стретчинг">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'stretching' %}">Стретчинг</a></h5>
+        </div>
+    </div>
+    <div class="type-fit">
+        <div class="type-fit-img">
+            <img src="{% static 'image/typesFit/tabs-stretching.png' %}" alt="TABS-Stretching">
+        </div>
+        <div class="type-fit-name">
+            <h5><a href="{% url 'tabsStretching' %}">TABS-Stretching</a></h5>
+        </div>
+    </div>
+</div>
+{% endblock %}

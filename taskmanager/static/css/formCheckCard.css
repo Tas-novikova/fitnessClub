@@ -1,0 +1,23 @@
+
+.form-checkCard{
+    display: flex;
+    flex-direction: column;
+}
+.form-checkCard h1{
+    font-size: 3em;
+    text-align: center;
+}
+.form-checkCard form{
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+    min-width: 300px;
+    /* width: 400px; */
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.form-checkCard span{
+    font-size: 2em;
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+{% extends 'fitnessclub/servicesBase.html' %}
+
+{% block contentServices %}
+<div><h1>Lower body</h1>
+</div>
+<br />
+<div class="content-types" style="font-size: 1.25em">Это вид групповых занятий, совмещающий тренировки мышц брюшного пресса и ягодиц.
+    Комплекс силовых упражнений средней нагрузки, разработанный для людей любого уровня физической подготовки.<br /><br />
+
+    По сути, это тот же вариант обычной силовой тренировки Total body, только акцент идет на самые проблемные зоны. Поэтому, если вы хотите заниматься
+    в групповом формате регулярно, рекомендуем выбрать сразу несколько вариантов силовых направлений и чередовать их.<br /><br />
+
+    <strong>Эффекты силовой тренировки: </strong><br />
+    <ul style="font-size: 1em">
+        <li> улучшение силовой выносливости; </li>
+        <li> улучшение качества мышц; </li>
+        <li> сжигание лишних кг; </li>
+        <li> улучшение состояния сердечно-сосудистой и дыхательной систем; </li>
+        <li> укрепление соединительной и костной ткани. </li>
+    </ul><br />
+    <span style="font-size: 1.3em; font-weight: bold;">Пробная тренировка - БЕСПЛАТНО.</span><br /><br />
+</div>
+<div class="button_free_lesson">
+    <a href="{% url 'freeLesson' %}" ><button id="buttonFreeLesson" class="btn btn-danger active" type="button" aria-pressed="true" style="border-radius: 2em; box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 40%);">Записаться на тренировку</button></a>
+</div>
+{% endblock %}
