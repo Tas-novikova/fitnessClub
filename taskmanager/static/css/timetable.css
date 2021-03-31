@@ -93,9 +93,10 @@ table{
     font-size: 1.1em;
 }
 .mes_after_table{
-    font-size: 1em;
+    font-size: 1.1em;
     text-align: center;
     padding-top: 10px;
+    margin-bottom: 1em;
 }
 .star_after_table{
     font-size: 1.1em;

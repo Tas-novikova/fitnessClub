@@ -52,6 +52,7 @@ class LessonsAdmin(admin.ModelAdmin):
     fields = ['name', 'phone', 'days', 'textMessage',  'note']
     readonly_fields = ['date_in', 'time_in']
     list_filter = ['days', 'date_in', 'note']
+    ordering = ['-date_in', '-time_in']
     search_fields = ['phone']
     save_on_top = True
     list_editable = ['note']

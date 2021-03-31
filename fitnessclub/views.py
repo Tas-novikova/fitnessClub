@@ -141,6 +141,7 @@ def checkCard(request, Cards=Cards):
 
 def freeLesson(request):
     error = ''
+    namerror = ''
     leng = ''
     if request.method == 'POST':
         #form = LessonsForm(request.POST)
@@ -152,12 +153,16 @@ def freeLesson(request):
         leng = len(obj.phone)
         if obj.is_valid():
             obj.save()
-            return redirect('freeLesson')
+            return redirect('home')
         else:
             if leng != 9 and obj.phone.isdigit():
                 error = 'Введите только 9 цифр'
+            elif leng > 9 and obj.phone.isdigit():
+                error = 'Введите только 9 цифр'
             else:
-                error = 'Форма заполнена не корректно'
+                error = 'Поле заполнено не корректно'
+            if obj.name.isalpha()==False:
+                namerror = 'Введите только буквы'
            #error = 'Форма заполнена не корректно'
 
 
@@ -166,7 +171,8 @@ def freeLesson(request):
     data = {
         'form': form,
         'error': error,
-        'leng': leng
+        'leng': leng,
+        'namerror': namerror,
     }
 
     return render(request, 'fitnessclub/freeLesson.html', data)

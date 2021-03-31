@@ -1,0 +1,39 @@
+@media screen and (max-width: 576px){
+.photo-fitness{
+    display:flex;
+	flex-direction: column;
+	align-items: center;}
+}
+@media screen and (max-width: 960px){
+.photo-fitness .photo-fit{
+    width: 45%;}
+}
+@media screen and (max-width: 600px){
+.photo-fitness .photo-fit{
+    width: 70%;}
+}
+
+
+
+.photo-fitness{
+    display:flex;
+	justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.photo-fit{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e9ecef;
+    margin: 15px;
+}
+.photo-fit-img{
+    vertical-align: middle;
+}
+.photo-fit-img img{
+    width: 100%;
+    height: 230px;
+}

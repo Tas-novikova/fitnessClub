@@ -12,7 +12,7 @@
         <form method="post">
             {% csrf_token %}
 
-            <span style="color:red;">*</span>{{ form.name }}<br>
+            <span style="color:red;">*</span><span style="color:red;">{{ namerror }}</span>{{ form.name }}<br>
 
             <span style="color:red;">*</span><span style="color:red;">{{ error }}</span>{{ form.phone }}<br>
             <!--{% if form.errors %}
