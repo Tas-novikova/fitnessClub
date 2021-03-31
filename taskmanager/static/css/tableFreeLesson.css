@@ -1,0 +1,10 @@
+.tableFreeLessons table{
+    min-width: 800px;
+    font-size:1.5em;
+    margin-left: -250px;
+}
+
+.tableFreeLessons button{
+    margin-left: -250px;
+}
+

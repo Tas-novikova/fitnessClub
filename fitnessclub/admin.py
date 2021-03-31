@@ -48,10 +48,10 @@ class CardsAdmin(admin.ModelAdmin):
 
 @admin.register(Lessons)
 class LessonsAdmin(admin.ModelAdmin):
-    list_display = ('name', 'phone', 'days', 'textMessage', 'date_in', 'time_in', 'note')
-    fields = ['name', 'phone', 'days', 'textMessage',  'note']
+    list_display = ('name', 'phone', 'days', 'textMessage', 'date_in', 'time_in', 'note', 'status')
+    fields = ['name', 'phone', 'days', 'textMessage', 'note', 'status']
     readonly_fields = ['date_in', 'time_in']
-    list_filter = ['days', 'date_in', 'note']
+    list_filter = ['days', 'date_in']
     ordering = ['-date_in', '-time_in']
     search_fields = ['phone']
     save_on_top = True

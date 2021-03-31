@@ -5,24 +5,44 @@
 {% block title %}Таблица с данными{% endblock %}
 
 {% block content %}
-<form method="post">
+<h3 class="text-center">Записи на пробные занятия</h3>
+<a href="{% url 'statistic' %}"><h5>Статистика</h5></a>
+<form method="post" class="tableFreeLessons">
     {% csrf_token %}
-    {{form.as_table}}
-    <button type="submit">Обработать</button>
+    <button type="submit" name="changeLes" class="btn btn-success">Обработать</button>
+
+    <table class="table fortableFreeLessons">
+        <thead >
+            <tr >
+                <th></th>
+                <th>Дата</th>
+                <th>Имя</th>
+                <th>Телефон</th>
+                <th>Сообщение</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for el in tableFreeLesson %}
+        {% if el.status == 0 %}
+            <tr style="color:#ffc107;">
+                <td><input type="checkbox" name="status{{ el.id }}" value="{{ el.id }}"></td>
+                <td>{{ el.date_in}} {{ el.time_in}}</td>
+                <td>{{ el.name}}</td>
+                <td>{{ el.phone}}</td>
+                <td>{{ el.textMessage}}</td>
+            </tr>
+        {% else %}
+            <tr style="color:green;">
+                <td></td>
+                <td>{{ el.date_in}} {{ el.time_in}}</td>
+                <td>{{ el.name}}</td>
+                <td>{{ el.phone}}</td>
+                <td>{{ el.textMessage}}</td>
+            </tr>
+        {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
 </form>
-<hr>
-<table>
-    <tr><td>Имя</td><td>Телефон</td><td>Дни</td><td>Сообщение</td><td>Дата</td><td>Примечание</td></tr>
-    {% for el in Lessons %}
-
-    <tr><td>{{ el.name}}</td><td>{{ el.phone}}</td><td>{{ el.days}}</td><td>{{ el.textMessage}}</td>
-        <td>{{ el.date_in}}{{ el.time_in}}</td>
-        <td>{% if el.note==True %}
-            обработано
-            {% endif %}
-        </td></tr>
-    {% endfor %}
-
-</table>
 
 {% endblock %}

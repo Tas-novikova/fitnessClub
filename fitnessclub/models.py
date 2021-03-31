@@ -106,16 +106,12 @@ DAY = ((None, "Выберете удобное для Вас время"),
 class Lessons(models.Model):
     name = models.CharField('Имя', max_length=100)
     phone = models.IntegerField('Телефон')
-    #day = ((None, "Выберете удобное для Вас время"),
-    #    ('1', "пн-пт утро"),
-    #    ('2', "пн-пт вечер"),
-    #    ('3', "сб-вс утро"),
-    #    ('4', "сб-вс день"))
     days = models.CharField('Дни', max_length=30, choices=DAY, blank=False, default=None)
     textMessage = models.TextField('Текст сообщения', blank=True, null=True)
     date_in = models.DateField('Дата', null=True, auto_now=True)
     time_in = models.TimeField('Время', null=True, auto_now=True)
     note = models.CharField('Примечание', max_length=255, blank=True)
+    status = models.IntegerField(default=0, verbose_name='status')
 
     def __str__(self):
         return self.name

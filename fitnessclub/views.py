@@ -141,29 +141,20 @@ def checkCard(request, Cards=Cards):
 
 def freeLesson(request):
     error = ''
-    namerror = ''
     leng = ''
+    obj = ''
     if request.method == 'POST':
-        #form = LessonsForm(request.POST)
-        obj = LessonsForm()
-        obj.phone = request.POST['phone']
-        obj.name = request.POST['name']
-        obj.textMessage = request.POST['textMessage']
-        obj.days = request.POST['days']
-        leng = len(obj.phone)
-        if obj.is_valid():
+        obj = LessonsForm(request.POST)
+        tmp_phone = request.POST['phone']
+        leng = len(tmp_phone)
+        if leng != 9 and tmp_phone.isdigit():
+            error = 'Введите только 9 цифр'
+        elif not tmp_phone.isdigit():
+            error = 'Поле заполнено не корректно'
+        elif obj.is_valid():
+            obj.status = 0
             obj.save()
             return redirect('home')
-        else:
-            if leng != 9 and obj.phone.isdigit():
-                error = 'Введите только 9 цифр'
-            elif leng > 9 and obj.phone.isdigit():
-                error = 'Введите только 9 цифр'
-            else:
-                error = 'Поле заполнено не корректно'
-            if obj.name.isalpha()==False:
-                namerror = 'Введите только буквы'
-           #error = 'Форма заполнена не корректно'
 
 
     form = LessonsForm()
@@ -172,7 +163,8 @@ def freeLesson(request):
         'form': form,
         'error': error,
         'leng': leng,
-        'namerror': namerror,
+        'obj': obj
+
     }
 
     return render(request, 'fitnessclub/freeLesson.html', data)
@@ -185,12 +177,26 @@ def statistic(request):
             if templ[0]==dct['days']:
                 dct['days_name']=templ[1]
 
-    return render(request, 'fitnessclub/statistic.html', {'stat': stat})
+    total = Lessons.objects.count()
+
+    return render(request, 'fitnessclub/statistic.html', {'stat': stat, 'total': total})
 
 
-#def tableFreeLesson(request):
- #   tableFreeLesson = Lessons.objects.order_by('-id')
-  #  return render(request, 'fitnessclub/tableFreeLesson.html', {'tableFreeLesson': tableFreeLesson})
+def tableFreeLesson(request):
+    tableFreeLesson = Lessons.objects.order_by('-date_in', '-time_in')
+    if request.method == 'POST':
+        les = Lessons.objects.all()
+        for el in les:
+            if "status"+str(el.id) in request.POST:
+                el.status = 1
+                el.save()
+
+    data = {
+        'tableFreeLesson': tableFreeLesson,
+    }
+
+
+    return render(request, 'fitnessclub/tableFreeLesson.html', data)
 
 
 
